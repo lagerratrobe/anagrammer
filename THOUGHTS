@@ -3,19 +3,13 @@ One way to approach the problem is to do the following
 get a word
 evaluate is word is at least 4 characters long
 scramble the word (this is not trivial.  Permutation)
+  stackoverflow.com/questions/13109274/python-recursion-permutations
 
-stackoverflow.com/questions/13109274/python-recursion-permutations
-
-evaluate if scrambled form of word is the same as input
-if not the same:
-  check if scrambled form is in list
-  scramble again (recursive scrambler)
-  check again (until all forms are tested)
+for every permutation of the word:
+  check whether permutation is in dict (make sure we don't check for seed word again)
+  If we've already found a match ie Reins = Resin, Rinse, Risen, Serin and Siren, none of those other words should get evaluated a second time.
+  
+Take advantage of sorted list to look up possible match.  Pre-process dict so that it's searchable by word length, which should split the data up into chunks.  Each chunk should still be in sorted order, so if we need to, can still use a binary search to find matches.
  
-Take advantage of sorted list to look up possible match
-
-Break the job up into multiple threads and split the list up into multiple jobs
-
-If we've already found a match ie Reins = Resin, Rinse, Risen, Serin and Siren, none of those other words should get evaluated a second time.
-
+Break the job up into multiple threads to speed it up.
 
