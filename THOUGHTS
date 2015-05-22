@@ -1,0 +1,21 @@
+One way to approach the problem is to do the following
+
+get a word
+evaluate is word is at least 4 characters long
+scramble the word (this is not trivial.  Permutation)
+
+stackoverflow.com/questions/13109274/python-recursion-permutations
+
+evaluate if scrambled form of word is the same as input
+if not the same:
+  check if scrambled form is in list
+  scramble again (recursive scrambler)
+  check again (until all forms are tested)
+ 
+Take advantage of sorted list to look up possible match
+
+Break the job up into multiple threads and split the list up into multiple jobs
+
+If we've already found a match ie Reins = Resin, Rinse, Risen, Serin and Siren, none of those other words 
+
+
