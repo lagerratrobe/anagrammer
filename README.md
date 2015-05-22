@@ -9,7 +9,7 @@ The dictionary should be a file on disk with one line per word.
 
 Output should be in this format:
 
-emit, item, mite, time
+emit, item, mite, time\n
 merit, miter, mitre, remit, timer
 reins, resin, rinse, risen, serin, siren
 inert, inter, niter, retin, trine

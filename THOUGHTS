@@ -16,6 +16,6 @@ Take advantage of sorted list to look up possible match
 
 Break the job up into multiple threads and split the list up into multiple jobs
 
-If we've already found a match ie Reins = Resin, Rinse, Risen, Serin and Siren, none of those other words 
+If we've already found a match ie Reins = Resin, Rinse, Risen, Serin and Siren, none of those other words should get evaluated a second time.
 
 
