@@ -2,6 +2,7 @@ One way to approach the problem is to do the following
 
 get a word
 evaluate is word is at least 4 characters long
+set word to all lower-case
 scramble the word (this is not trivial.  Permutation)
   stackoverflow.com/questions/13109274/python-recursion-permutations
 
@@ -13,3 +14,5 @@ Take advantage of sorted list to look up possible match.  Pre-process dict so th
  
 Break the job up into multiple threads to speed it up.
 
+
+TODO: Need to see what types of punctuation or other chars are in data file
