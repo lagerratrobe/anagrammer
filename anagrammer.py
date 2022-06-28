@@ -1,4 +1,4 @@
-#! /usr/local/bin/python
+#! /usr/bin/python3
 
 __author__ = 'Roger Andre, May 2015'
 
@@ -46,7 +46,8 @@ def printData(processed_data):
     word_length = len(signature)
     list_length = len(processed_data[signature])
     if list_length >= word_length:
-      print ','.join(processed_data[signature])
+      word_list = ','.join(processed_data[signature])
+      print(word_list)
   
 def main():
   word_data = getData()
